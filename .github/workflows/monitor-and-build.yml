@@ -215,6 +215,7 @@ jobs:
       - name: Run tests and build release APKs
         working-directory: sources/TV
         run: |
+          chmod +x gradlew
           ./gradlew --no-daemon --stacktrace \
             :app:testLeanbackArmeabi_v7aDebugUnitTest \
             :app:testMobileArm64_v8aDebugUnitTest \
